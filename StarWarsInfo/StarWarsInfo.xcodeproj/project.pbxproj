@@ -115,7 +115,6 @@
 		5843EE5C20571F59006B6595 = {
 			isa = PBXGroup;
 			children = (
-				5843EEC42059FD55006B6595 /* StarWarsSpeciesDataStore.swift */,
 				5843EE6720571F59006B6595 /* StarWarsInfo */,
 				5843EE7F20571F59006B6595 /* StarWarsInfoTests */,
 				5843EE8A20571F59006B6595 /* StarWarsInfoUITests */,
@@ -198,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				5843EEC02059FC8D006B6595 /* StarWarsVehicleDataStore.swift */,
+				5843EEC42059FD55006B6595 /* StarWarsSpeciesDataStore.swift */,
 				5843EEC22059FCD5006B6595 /* StarWarsFilmsDataStore.swift */,
 				5843EEBC2059FBBF006B6595 /* StarWarsStarshipDataStore.swift */,
 				5843EEBE2059FC26006B6595 /* StarWarsPlanetsDataStore.swift */,
