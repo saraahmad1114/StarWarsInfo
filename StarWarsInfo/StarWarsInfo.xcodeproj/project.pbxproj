@@ -27,6 +27,7 @@
 		5843EEAD2059F92B006B6595 /* StarWarsPlanet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843EEAC2059F92B006B6595 /* StarWarsPlanet.swift */; };
 		5843EEAF2059F97B006B6595 /* StarWarsPeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843EEAE2059F97B006B6595 /* StarWarsPeople.swift */; };
 		5843EEB12059F9AE006B6595 /* StarWarsStarship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843EEB02059F9AE006B6595 /* StarWarsStarship.swift */; };
+		5843EEB52059FAD6006B6595 /* StarWarsPeopleDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843EEB42059FAD6006B6595 /* StarWarsPeopleDataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		5843EEAC2059F92B006B6595 /* StarWarsPlanet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPlanet.swift; sourceTree = "<group>"; };
 		5843EEAE2059F97B006B6595 /* StarWarsPeople.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPeople.swift; sourceTree = "<group>"; };
 		5843EEB02059F9AE006B6595 /* StarWarsStarship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsStarship.swift; sourceTree = "<group>"; };
+		5843EEB42059FAD6006B6595 /* StarWarsPeopleDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPeopleDataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				5843EE6C20571F59006B6595 /* Main.storyboard */,
 				5843EEB32059F9E9006B6595 /* StarWar Objects */,
 				5843EE7220571F59006B6595 /* Assets.xcassets */,
+				5843EEB42059FAD6006B6595 /* StarWarsPeopleDataStore.swift */,
 				5843EE7420571F59006B6595 /* LaunchScreen.storyboard */,
 				5843EE7720571F59006B6595 /* Info.plist */,
 				5843EE6F20571F59006B6595 /* StarWarsInfo.xcdatamodeld */,
@@ -325,6 +328,7 @@
 				5843EEAF2059F97B006B6595 /* StarWarsPeople.swift in Sources */,
 				5843EE9A2059EDCB006B6595 /* StarWarsPeopleAPIClient.swift in Sources */,
 				5843EE6920571F59006B6595 /* AppDelegate.swift in Sources */,
+				5843EEB52059FAD6006B6595 /* StarWarsPeopleDataStore.swift in Sources */,
 				5843EEAB2059F904006B6595 /* StarWarsFilms.swift in Sources */,
 				5843EEA72059F7B2006B6595 /* StarWarsSpecies.swift in Sources */,
 				5843EEA42059F227006B6595 /* StarWarsFilmsAPIClient.swift in Sources */,
