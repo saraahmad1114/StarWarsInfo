@@ -215,6 +215,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="46V-qH-fip" kind="show" id="bSz-Cy-V4E"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -226,6 +229,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Np2-pJ-g84" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1457" y="566"/>
+        </scene>
+        <!--Star Wars Person Detail View Controller-->
+        <scene sceneID="c31-1Q-eE9">
+            <objects>
+                <viewController id="46V-qH-fip" customClass="StarWarsPersonDetailViewController" customModule="StarWarsInfo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dvU-Go-iLc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Bpq-80-aZY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ujh-eY-P5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2258" y="565"/>
         </scene>
         <!--Species-->
         <scene sceneID="7lt-JI-Hh2">
@@ -271,6 +289,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="6rB-cx-zSM" kind="show" identifier="planetSegue" id="KiZ-IP-ki9"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -282,6 +303,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eWy-xs-Pou" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="503" y="-546"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mbn-Wy-iUZ">
+            <objects>
+                <viewController id="6rB-cx-zSM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7PK-20-qsT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="khQ-ga-gg0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VtZ-M1-psM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1273" y="-865"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nor-VI-bAG">

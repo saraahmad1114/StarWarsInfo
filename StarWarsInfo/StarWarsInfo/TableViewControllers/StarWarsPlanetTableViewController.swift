@@ -59,14 +59,13 @@ class StarWarsPlanetTableViewController: UITableViewController {
         }
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "planetSegue"{
-//            if let destinationVC = segue.destination as? PlanetDetailViewController{
-//                let neededIndexPath = self.tableView.indexPathForSelectedRow!
-//                destinationVC.starWarsPlanetObject = self.store.starWarsPlanetsArray[neededIndexPath.row]
-//            }
-//
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "planetSegue"{
+            if let destinationVC = segue.destination as? StarWarsPlanetDetailViewController{
+                let neededIndexPath = self.tableView.indexPathForSelectedRow!
+                destinationVC.starWarsPlanetObject = self.store.starWarsPlanetsArray[neededIndexPath.row]
+            }
+        }
+    }
 }
 
