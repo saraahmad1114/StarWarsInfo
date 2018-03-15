@@ -9,7 +9,7 @@
 import Foundation
 
 class StarWarsPeopleDataStore{
-    
+
     static let sharedInstance = StarWarsPeopleDataStore()
     private init() {}
     
