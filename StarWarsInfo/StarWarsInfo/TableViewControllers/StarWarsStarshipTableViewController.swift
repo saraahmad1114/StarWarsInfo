@@ -58,11 +58,12 @@ class StarWarsStarshipTableViewController: UITableViewController {
         }
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "starshipSegue"{
-//            if let destinationVC = segue.destination as? StarshipDetailViewController{
-//                let neededIndexPath = self.tableView.indexPathForSelectedRow!
-//                destinationVC.starShipObject = self.store.starWarsStarshipArray[neededIndexPath.row]
-//            }
-//        }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "starshipSegue"{
+            if let destinationVC = segue.destination as? StarWarsStarshipDetailViewController{
+                let neededIndexPath = self.tableView.indexPathForSelectedRow!
+                destinationVC.starShipObject = self.store.starWarsStarshipArray[neededIndexPath.row]
+            }
+        }
+    }
 }

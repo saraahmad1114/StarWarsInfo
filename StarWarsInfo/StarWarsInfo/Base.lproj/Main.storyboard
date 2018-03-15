@@ -159,6 +159,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="boS-AT-azq" kind="show" identifier="starshipSegue" id="CV6-NY-WbH"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -170,6 +173,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Mk-wA-hmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-25" y="878"/>
+        </scene>
+        <!--Star Wars Starship Detail View Controller-->
+        <scene sceneID="CaO-x7-7Xr">
+            <objects>
+                <viewController id="boS-AT-azq" customClass="StarWarsStarshipDetailViewController" customModule="StarWarsInfo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w2O-jT-pUq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="XoM-Fa-Ji3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aMd-EV-A5h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26" y="1645"/>
         </scene>
         <!--Films-->
         <scene sceneID="ZuV-QD-1GM">
