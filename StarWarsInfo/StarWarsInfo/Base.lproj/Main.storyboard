@@ -62,6 +62,9 @@
                                     <constraint firstAttribute="height" constant="107" id="KN8-c8-kdA"/>
                                 </constraints>
                                 <state key="normal" image="GroupSpecies"/>
+                                <connections>
+                                    <segue destination="X0H-bb-G65" kind="show" id="18T-jM-tO0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhm-jh-2qC">
                                 <rect key="frame" x="143" y="468" width="102" height="107"/>
@@ -70,6 +73,9 @@
                                     <constraint firstAttribute="height" constant="107" id="Omc-XD-vy9"/>
                                 </constraints>
                                 <state key="normal" image="GroupVehicle"/>
+                                <connections>
+                                    <segue destination="z6N-Am-LSm" kind="show" id="omr-8S-06h"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEU-7C-UaB">
                                 <rect key="frame" x="143" y="566" width="102" height="107"/>
@@ -78,6 +84,9 @@
                                     <constraint firstAttribute="width" constant="102" id="E6T-Zi-PEF"/>
                                 </constraints>
                                 <state key="normal" image="GroupFilm"/>
+                                <connections>
+                                    <segue destination="ZtG-6E-OXh" kind="show" id="nmR-DB-EZC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -106,6 +115,34 @@
             </objects>
             <point key="canvasLocation" x="476" y="133.5832083958021"/>
         </scene>
+        <!--Star Wars Vehicle Table View Controller-->
+        <scene sceneID="lGh-VQ-FIU">
+            <objects>
+                <tableViewController id="z6N-Am-LSm" customClass="StarWarsVehicleTableViewController" customModule="StarWarsInfo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wYm-eQ-REZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="fQq-J6-AKm">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fQq-J6-AKm" id="UhE-Xr-Jaq">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="z6N-Am-LSm" id="OA2-Pt-zwu"/>
+                            <outlet property="delegate" destination="z6N-Am-LSm" id="Vim-sx-RJ4"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uAX-Op-iSi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1233" y="-99"/>
+        </scene>
         <!--Star Wars Starship Table View Controller-->
         <scene sceneID="xh3-go-xan">
             <objects>
@@ -132,7 +169,35 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Mk-wA-hmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="476" y="844"/>
+            <point key="canvasLocation" x="-25" y="878"/>
+        </scene>
+        <!--Star Wars Film Table View Controller-->
+        <scene sceneID="ZuV-QD-1GM">
+            <objects>
+                <tableViewController id="ZtG-6E-OXh" customClass="StarWarsFilmTableViewController" customModule="StarWarsInfo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Zlq-Ue-can">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="LJi-QT-Ebz">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LJi-QT-Ebz" id="sFX-dI-JKF">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ZtG-6E-OXh" id="e22-O2-6Tb"/>
+                            <outlet property="delegate" destination="ZtG-6E-OXh" id="ycp-Mt-iq1"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ilR-YK-4v2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="705" y="884"/>
         </scene>
         <!--Star Wars People Table View Controller-->
         <scene sceneID="2qn-ju-BLO">
@@ -160,7 +225,35 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Np2-pJ-g84" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1270" y="563"/>
+            <point key="canvasLocation" x="1457" y="566"/>
+        </scene>
+        <!--Star Wars Specie Table View Controller-->
+        <scene sceneID="7lt-JI-Hh2">
+            <objects>
+                <tableViewController id="X0H-bb-G65" customClass="StarWarsSpecieTableViewController" customModule="StarWarsInfo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lNC-MS-4UX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="qyt-GG-1yR">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qyt-GG-1yR" id="gQp-8i-xjO">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="X0H-bb-G65" id="ady-gA-vUk"/>
+                            <outlet property="delegate" destination="X0H-bb-G65" id="YJE-hq-KTf"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ndn-Y3-vz2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-658" y="884"/>
         </scene>
         <!--Star Wars Planet Table View Controller-->
         <scene sceneID="KEA-f9-Doz">
@@ -188,7 +281,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eWy-xs-Pou" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1271" y="-114"/>
+            <point key="canvasLocation" x="503" y="-546"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nor-VI-bAG">
