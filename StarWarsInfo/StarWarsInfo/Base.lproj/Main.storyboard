@@ -216,7 +216,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="46V-qH-fip" kind="show" id="bSz-Cy-V4E"/>
+                                    <segue destination="46V-qH-fip" kind="show" identifier="peopleDetailSegue" id="bSz-Cy-V4E"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

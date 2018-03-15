@@ -60,13 +60,13 @@ class StarWarsPeopleTableViewController: UITableViewController {
         }
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "peopleDetailSegue"{
-//            if let destinationVC = segue.destination as? PeopleDetailViewController {
-//                let neededIndexPath = self.tableView.indexPathForSelectedRow!
-//                destinationVC.starWarsPeopleObject = self.store.starWarsPeopleArray[neededIndexPath.row]
-//            }
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "peopleDetailSegue"{
+            if let destinationVC = segue.destination as? StarWarsPersonDetailViewController {
+                let neededIndexPath = self.tableView.indexPathForSelectedRow!
+                destinationVC.starWarsPeopleObject = self.store.starWarsPeopleArray[neededIndexPath.row]
+            }
+        }
+    }
     
 }

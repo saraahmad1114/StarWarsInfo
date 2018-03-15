@@ -9,6 +9,8 @@
 import UIKit
 
 class StarWarsPersonDetailViewController: UIViewController {
+    
+    var starWarsPeopleObject: StarWarsPeople?
 
     override func viewDidLoad() {
         super.viewDidLoad()
