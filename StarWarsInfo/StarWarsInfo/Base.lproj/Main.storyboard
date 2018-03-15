@@ -55,19 +55,27 @@
                                 <state key="normal" image="GroupSpecies"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhm-jh-2qC">
-                                <rect key="frame" x="143" y="468" width="100" height="98"/>
+                                <rect key="frame" x="143" y="468" width="102" height="107"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="K07-ED-KVd"/>
-                                    <constraint firstAttribute="height" constant="98" id="Omc-XD-vy9"/>
+                                    <constraint firstAttribute="width" constant="102" id="K07-ED-KVd"/>
+                                    <constraint firstAttribute="height" constant="107" id="Omc-XD-vy9"/>
                                 </constraints>
                                 <state key="normal" image="GroupVehicle"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEU-7C-UaB">
+                                <rect key="frame" x="143" y="566" width="102" height="107"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="107" id="2gI-c3-ihe"/>
+                                    <constraint firstAttribute="width" constant="102" id="E6T-Zi-PEF"/>
+                                </constraints>
+                                <state key="normal" image="GroupFilm"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="LyB-xH-zm1" firstAttribute="centerX" secondItem="ppq-cL-co6" secondAttribute="centerX" constant="4.5" id="8Rv-nz-i9X"/>
                             <constraint firstItem="Mhm-jh-2qC" firstAttribute="top" secondItem="LyB-xH-zm1" secondAttribute="bottom" constant="92" id="Acf-kn-oHq"/>
-                            <constraint firstItem="Mhm-jh-2qC" firstAttribute="centerX" secondItem="ppq-cL-co6" secondAttribute="centerX" constant="5.5" id="G8l-cz-HPD"/>
+                            <constraint firstItem="Mhm-jh-2qC" firstAttribute="centerX" secondItem="ppq-cL-co6" secondAttribute="centerX" constant="6.5" id="G8l-cz-HPD"/>
                             <constraint firstItem="LyB-xH-zm1" firstAttribute="top" secondItem="2OB-XW-Pd1" secondAttribute="bottom" constant="89" id="HQC-9z-Wz4"/>
                             <constraint firstItem="2OB-XW-Pd1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="Jah-0O-lRZ"/>
                             <constraint firstItem="ppq-cL-co6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TJM-lJ-Txh"/>
@@ -78,6 +86,8 @@
                             <constraint firstItem="ppq-cL-co6" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="umM-Db-fZ0"/>
                             <constraint firstItem="2OB-XW-Pd1" firstAttribute="centerY" secondItem="ppq-cL-co6" secondAttribute="centerY" constant="8.5" id="v6Z-Ho-xDl"/>
                             <constraint firstItem="nbM-33-Dgi" firstAttribute="top" secondItem="zt0-TJ-hlh" secondAttribute="bottom" constant="89" id="vOr-s5-DFk"/>
+                            <constraint firstItem="MEU-7C-UaB" firstAttribute="centerX" secondItem="ppq-cL-co6" secondAttribute="centerX" constant="6.5" id="vRn-07-ZNY"/>
+                            <constraint firstItem="MEU-7C-UaB" firstAttribute="top" secondItem="nbM-33-Dgi" secondAttribute="bottom" constant="92" id="vfw-9r-9Ks"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -108,6 +118,7 @@
     </scenes>
     <resources>
         <image name="Group" width="100" height="98"/>
+        <image name="GroupFilm" width="100" height="98"/>
         <image name="GroupPeople" width="100" height="98"/>
         <image name="GroupSpecies" width="100" height="98"/>
         <image name="GroupStarship" width="100" height="98"/>
