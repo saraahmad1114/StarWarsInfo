@@ -59,13 +59,13 @@ class StarWarsSpecieTableViewController: UITableViewController {
         }
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "speciesSegue"{
-//            if let destinationVC = segue.destination as? SpecieDetailViewController{
-//                let neededIndexPath = self.tableView.indexPathForSelectedRow
-//                destinationVC.specieObject = self.store.starWarsSpeciesArray[(neededIndexPath?.row)!]
-//            }
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "speciesSegue"{
+            if let destinationVC = segue.destination as? StarWarsSpecieDetailViewController{
+                let neededIndexPath = self.tableView.indexPathForSelectedRow
+                destinationVC.specieObject = self.store.starWarsSpeciesArray[(neededIndexPath?.row)!]
+            }
+        }
+    }
 }
 
