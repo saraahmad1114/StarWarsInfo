@@ -161,18 +161,13 @@
 			children = (
 				5843EE6820571F59006B6595 /* AppDelegate.swift */,
 				5843EE6A20571F59006B6595 /* ViewController.swift */,
+				5843EEE1205B42F4006B6595 /* DetailViewControllers */,
 				5843EED4205B3633006B6595 /* TableViewControllers */,
-				5843EEA52059F2A0006B6595 /* APIClient */,
-				5843EEB32059F9E9006B6595 /* StarWar Objects */,
 				5843EEBB2059FB5F006B6595 /* StarWarsDatastore */,
-				5843EE6C20571F59006B6595 /* Main.storyboard */,
-				5843EEDF205B4242006B6595 /* StarWarsFilmDetailViewController.swift */,
-				5843EEDD205B4109006B6595 /* StarWarsVehicleDetailViewController.swift */,
-				5843EEDB205B3FCB006B6595 /* StarWarsSpecieDetailViewController.swift */,
-				5843EED9205B3E91006B6595 /* StarWarsStarshipDetailViewController.swift */,
-				5843EED7205B3CA0006B6595 /* StarWarsPersonDetailViewController.swift */,
-				5843EED5205B3774006B6595 /* StarWarsPlanetDetailViewController.swift */,
+				5843EEB32059F9E9006B6595 /* StarWar Objects */,
+				5843EEA52059F2A0006B6595 /* APIClient */,
 				5843EE7220571F59006B6595 /* Assets.xcassets */,
+				5843EE6C20571F59006B6595 /* Main.storyboard */,
 				5843EE7420571F59006B6595 /* LaunchScreen.storyboard */,
 				5843EE7720571F59006B6595 /* Info.plist */,
 				5843EE6F20571F59006B6595 /* StarWarsInfo.xcdatamodeld */,
@@ -248,6 +243,19 @@
 				5843EEC6205B1C19006B6595 /* StarWarsPlanetTableViewController.swift */,
 			);
 			path = TableViewControllers;
+			sourceTree = "<group>";
+		};
+		5843EEE1205B42F4006B6595 /* DetailViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5843EED5205B3774006B6595 /* StarWarsPlanetDetailViewController.swift */,
+				5843EED7205B3CA0006B6595 /* StarWarsPersonDetailViewController.swift */,
+				5843EED9205B3E91006B6595 /* StarWarsStarshipDetailViewController.swift */,
+				5843EEDB205B3FCB006B6595 /* StarWarsSpecieDetailViewController.swift */,
+				5843EEDD205B4109006B6595 /* StarWarsVehicleDetailViewController.swift */,
+				5843EEDF205B4242006B6595 /* StarWarsFilmDetailViewController.swift */,
+			);
+			path = DetailViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

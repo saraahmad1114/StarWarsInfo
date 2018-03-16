@@ -42,7 +42,6 @@ class StarWarsFilmTableViewController: UITableViewController {
         return cell
     }
     
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueFilm"{
             if let destinationVC = segue.destination as? StarWarsFilmDetailViewController{
@@ -51,5 +50,4 @@ class StarWarsFilmTableViewController: UITableViewController {
             }
         }
     }
-    
 }
