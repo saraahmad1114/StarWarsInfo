@@ -43,13 +43,13 @@ class StarWarsFilmTableViewController: UITableViewController {
     }
     
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "segueFilm"{
-//            if let destinationVC = segue.destination as? FilmDetailViewController{
-//                let neededIndexPath = self.tableView.indexPathForSelectedRow
-//                destinationVC.filmObj = self.store.starWarsFilmsArray[(neededIndexPath?.row)!]
-//            }
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueFilm"{
+            if let destinationVC = segue.destination as? StarWarsFilmDetailViewController{
+                let neededIndexPath = self.tableView.indexPathForSelectedRow
+                destinationVC.filmObj = self.store.starWarsFilmsArray[(neededIndexPath?.row)!]
+            }
+        }
+    }
     
 }

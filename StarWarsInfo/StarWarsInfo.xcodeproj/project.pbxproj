@@ -44,6 +44,7 @@
 		5843EEDA205B3E91006B6595 /* StarWarsStarshipDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843EED9205B3E91006B6595 /* StarWarsStarshipDetailViewController.swift */; };
 		5843EEDC205B3FCB006B6595 /* StarWarsSpecieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843EEDB205B3FCB006B6595 /* StarWarsSpecieDetailViewController.swift */; };
 		5843EEDE205B4109006B6595 /* StarWarsVehicleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843EEDD205B4109006B6595 /* StarWarsVehicleDetailViewController.swift */; };
+		5843EEE0205B4242006B6595 /* StarWarsFilmDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843EEDF205B4242006B6595 /* StarWarsFilmDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		5843EED9205B3E91006B6595 /* StarWarsStarshipDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsStarshipDetailViewController.swift; sourceTree = "<group>"; };
 		5843EEDB205B3FCB006B6595 /* StarWarsSpecieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsSpecieDetailViewController.swift; sourceTree = "<group>"; };
 		5843EEDD205B4109006B6595 /* StarWarsVehicleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsVehicleDetailViewController.swift; sourceTree = "<group>"; };
+		5843EEDF205B4242006B6595 /* StarWarsFilmDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsFilmDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				5843EEB32059F9E9006B6595 /* StarWar Objects */,
 				5843EEBB2059FB5F006B6595 /* StarWarsDatastore */,
 				5843EE6C20571F59006B6595 /* Main.storyboard */,
+				5843EEDF205B4242006B6595 /* StarWarsFilmDetailViewController.swift */,
 				5843EEDD205B4109006B6595 /* StarWarsVehicleDetailViewController.swift */,
 				5843EEDB205B3FCB006B6595 /* StarWarsSpecieDetailViewController.swift */,
 				5843EED9205B3E91006B6595 /* StarWarsStarshipDetailViewController.swift */,
@@ -401,6 +404,7 @@
 				5843EE9A2059EDCB006B6595 /* StarWarsPeopleAPIClient.swift in Sources */,
 				5843EE6920571F59006B6595 /* AppDelegate.swift in Sources */,
 				5843EEB52059FAD6006B6595 /* StarWarsPeopleDataStore.swift in Sources */,
+				5843EEE0205B4242006B6595 /* StarWarsFilmDetailViewController.swift in Sources */,
 				5843EEC7205B1C19006B6595 /* StarWarsPlanetTableViewController.swift in Sources */,
 				5843EEC32059FCD5006B6595 /* StarWarsFilmsDataStore.swift in Sources */,
 				5843EEBF2059FC26006B6595 /* StarWarsPlanetsDataStore.swift in Sources */,
