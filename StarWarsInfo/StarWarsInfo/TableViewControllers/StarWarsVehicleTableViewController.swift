@@ -60,14 +60,14 @@ class StarWarsVehicleTableViewController: UITableViewController {
         }
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "vehicleSegue"{
-//            if let desinationVC = segue.destination as? VehicleDetailViewController{
-//                let neeededIndexPath = self.tableView.indexPathForSelectedRow
-//                desinationVC.vehicleObj = self.store.starWarsVehicleArray[(neeededIndexPath?.row)!]
-//            }
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "vehicleSegue"{
+            if let desinationVC = segue.destination as? StarWarsVehicleDetailViewController{
+                let neeededIndexPath = self.tableView.indexPathForSelectedRow
+                desinationVC.vehicleObj = self.store.starWarsVehicleArray[(neeededIndexPath?.row)!]
+            }
+        }
+    }
     
 }
 

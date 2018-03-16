@@ -131,6 +131,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="ehs-rD-oaQ" kind="show" identifier="vehicleSegue" id="zeL-mD-bYG"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -142,6 +145,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uAX-Op-iSi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1233" y="-99"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HiG-IN-o3L">
+            <objects>
+                <viewController id="ehs-rD-oaQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="faq-jK-oYH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="P86-A2-zdM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HGZ-1u-SPJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2118" y="-99"/>
         </scene>
         <!--Starships-->
         <scene sceneID="xh3-go-xan">
