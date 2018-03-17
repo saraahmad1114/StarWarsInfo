@@ -313,12 +313,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vD1-n3-uXu">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star-wars-galaxy-of-heroes" translatesAutoresizingMaskIntoConstraints="NO" id="7cU-IL-YT8">
+                                <rect key="frame" x="0.0" y="465" width="375" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XoM-Fa-Ji3"/>
                     </view>
                 </viewController>
@@ -545,6 +545,7 @@
         <image name="GroupSpecies" width="100" height="98"/>
         <image name="GroupStarship" width="100" height="98"/>
         <image name="GroupVehicle" width="100" height="98"/>
+        <image name="star-wars-galaxy-of-heroes" width="414" height="318"/>
         <image name="star_wars_battlefront_2_2005_art_1536.0" width="375" height="667"/>
     </resources>
 </document>
