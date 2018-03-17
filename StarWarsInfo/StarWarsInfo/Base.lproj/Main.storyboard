@@ -313,7 +313,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cb1120_0f032d0f-800x341" translatesAutoresizingMaskIntoConstraints="NO" id="vD1-n3-uXu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vD1-n3-uXu">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -333,13 +333,19 @@
                     <view key="view" contentMode="scaleToFill" id="eRC-nI-bxG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YRy-t4-AUS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zu4-ci-TSN"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yxb-aK-aoP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="705" y="1633"/>
+            <point key="canvasLocation" x="704.79999999999995" y="1632.2338830584708"/>
         </scene>
         <!--Films-->
         <scene sceneID="ZuV-QD-1GM">
@@ -526,7 +532,6 @@
         <image name="GroupSpecies" width="100" height="98"/>
         <image name="GroupStarship" width="100" height="98"/>
         <image name="GroupVehicle" width="100" height="98"/>
-        <image name="cb1120_0f032d0f-800x341" width="414" height="736"/>
         <image name="star_wars_battlefront_2_2005_art_1536.0" width="375" height="667"/>
     </resources>
 </document>
