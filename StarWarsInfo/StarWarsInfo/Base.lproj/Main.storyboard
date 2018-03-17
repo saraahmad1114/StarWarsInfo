@@ -200,7 +200,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Aliens - x many" translatesAutoresizingMaskIntoConstraints="NO" id="rzE-au-Jzr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rzE-au-Jzr">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -486,20 +486,33 @@
             </objects>
             <point key="canvasLocation" x="503" y="-546"/>
         </scene>
-        <!--View Controller-->
+        <!--Star Wars Planet Detail View Controller-->
         <scene sceneID="mbn-Wy-iUZ">
             <objects>
-                <viewController id="6rB-cx-zSM" sceneMemberID="viewController">
+                <viewController id="6rB-cx-zSM" customClass="StarWarsPlanetDetailViewController" customModule="StarWarsInfo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7PK-20-qsT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 2" translatesAutoresizingMaskIntoConstraints="NO" id="9uE-Qf-Cxd">
+                                <rect key="frame" x="0.0" y="500" width="375" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="dZy-qw-xE7"/>
+                                    <constraint firstAttribute="height" constant="167" id="sTR-Bi-hLa"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9uE-Qf-Cxd" firstAttribute="leading" secondItem="7PK-20-qsT" secondAttribute="leading" id="Ldu-ih-9Jd"/>
+                            <constraint firstItem="9uE-Qf-Cxd" firstAttribute="top" secondItem="khQ-ga-gg0" secondAttribute="top" constant="436" id="UVV-Xe-pzH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="khQ-ga-gg0"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VtZ-M1-psM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1273" y="-865"/>
+            <point key="canvasLocation" x="1272.8" y="-865.81709145427294"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nor-VI-bAG">
@@ -525,8 +538,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Aliens - x many" width="414" height="736"/>
         <image name="Group" width="100" height="98"/>
+        <image name="Group 2" width="365" height="292"/>
         <image name="GroupFilm" width="100" height="98"/>
         <image name="GroupPeople" width="100" height="98"/>
         <image name="GroupSpecies" width="100" height="98"/>
