@@ -10,7 +10,6 @@ import Foundation
 
 class StarWarsPeopleAPIClient
 {
-    
     class func getStarWarsPeopleInformation (page: Int, completion:@escaping (Array<Any>)-> ()){
         
         var starWarsPeopleArray = Array<Any>()
@@ -26,14 +25,9 @@ class StarWarsPeopleAPIClient
         
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             
-            //guard let unwrappedData = data else { print("unwrappedData did not unwrap"); return}
+            guard let unwrappedData = data else { print("unwrappedData did not unwrap"); return}
 
-            
-            do{
-            
-            if let data = data{
-                
-            let jsonResponseDictionary = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+            let jsonResponseDictionary = try? JSONSerialization.jsonObject(with: unwrappedData, options: []) as! [String: Any]
             
             guard let unwrappedJsonResponseDictionary = jsonResponseDictionary else {
                 print("unwrappedJsonResponseDictionary did not unwrap"); return
@@ -46,13 +40,7 @@ class StarWarsPeopleAPIClient
             starWarsPeopleArray = unwrappedResultsArray
             
             completion(starWarsPeopleArray)
-                }
-            }
-            
-            catch let error{
-                print(error)
-            }
-            
+  
         }
         
         task.resume()

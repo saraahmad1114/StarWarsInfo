@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5803559E20682DBF00B68E2B /* StarWarsNetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5803559D20682DBF00B68E2B /* StarWarsNetworkCall.swift */; };
+		580355A02068310100B68E2B /* StarWarsFilmsNetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5803559F2068310100B68E2B /* StarWarsFilmsNetworkCall.swift */; };
 		5843EE6920571F59006B6595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843EE6820571F59006B6595 /* AppDelegate.swift */; };
 		5843EE6B20571F59006B6595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843EE6A20571F59006B6595 /* ViewController.swift */; };
 		5843EE6E20571F59006B6595 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5843EE6C20571F59006B6595 /* Main.storyboard */; };
@@ -67,6 +68,7 @@
 
 /* Begin PBXFileReference section */
 		5803559D20682DBF00B68E2B /* StarWarsNetworkCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsNetworkCall.swift; sourceTree = "<group>"; };
+		5803559F2068310100B68E2B /* StarWarsFilmsNetworkCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsFilmsNetworkCall.swift; sourceTree = "<group>"; };
 		5843EE6520571F59006B6595 /* StarWarsInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5843EE6820571F59006B6595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5843EE6A20571F59006B6595 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				5843EE6820571F59006B6595 /* AppDelegate.swift */,
 				5843EE6A20571F59006B6595 /* ViewController.swift */,
 				5803559D20682DBF00B68E2B /* StarWarsNetworkCall.swift */,
+				5803559F2068310100B68E2B /* StarWarsFilmsNetworkCall.swift */,
 				5843EEE1205B42F4006B6595 /* DetailViewControllers */,
 				5843EED4205B3633006B6595 /* TableViewControllers */,
 				5843EEBB2059FB5F006B6595 /* StarWarsDatastore */,
@@ -424,6 +427,7 @@
 				5843EECF205B1C86006B6595 /* StarWarsVehicleTableViewController.swift in Sources */,
 				5843EEAB2059F904006B6595 /* StarWarsFilms.swift in Sources */,
 				5843EEA72059F7B2006B6595 /* StarWarsSpecies.swift in Sources */,
+				580355A02068310100B68E2B /* StarWarsFilmsNetworkCall.swift in Sources */,
 				5843EED1205B1C98006B6595 /* StarWarsFilmTableViewController.swift in Sources */,
 				5843EEC12059FC8D006B6595 /* StarWarsVehicleDataStore.swift in Sources */,
 				5843EEA42059F227006B6595 /* StarWarsFilmsAPIClient.swift in Sources */,
