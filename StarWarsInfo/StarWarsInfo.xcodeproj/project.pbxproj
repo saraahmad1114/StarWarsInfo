@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5803559E20682DBF00B68E2B /* StarWarsNetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5803559D20682DBF00B68E2B /* StarWarsNetworkCall.swift */; };
 		5843EE6920571F59006B6595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843EE6820571F59006B6595 /* AppDelegate.swift */; };
 		5843EE6B20571F59006B6595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843EE6A20571F59006B6595 /* ViewController.swift */; };
 		5843EE6E20571F59006B6595 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5843EE6C20571F59006B6595 /* Main.storyboard */; };
@@ -65,6 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5803559D20682DBF00B68E2B /* StarWarsNetworkCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsNetworkCall.swift; sourceTree = "<group>"; };
 		5843EE6520571F59006B6595 /* StarWarsInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5843EE6820571F59006B6595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5843EE6A20571F59006B6595 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			children = (
 				5843EE6820571F59006B6595 /* AppDelegate.swift */,
 				5843EE6A20571F59006B6595 /* ViewController.swift */,
+				5803559D20682DBF00B68E2B /* StarWarsNetworkCall.swift */,
 				5843EEE1205B42F4006B6595 /* DetailViewControllers */,
 				5843EED4205B3633006B6595 /* TableViewControllers */,
 				5843EEBB2059FB5F006B6595 /* StarWarsDatastore */,
@@ -401,6 +404,7 @@
 				5843EEAD2059F92B006B6595 /* StarWarsPlanet.swift in Sources */,
 				5843EEA22059F1AD006B6595 /* StarWarsVehicleAPIClient.swift in Sources */,
 				5843EE9C2059EF5C006B6595 /* StarWarsPlanetAPIClient.swift in Sources */,
+				5803559E20682DBF00B68E2B /* StarWarsNetworkCall.swift in Sources */,
 				5843EEA02059F0CA006B6595 /* StarWarsSpeciesAPIClient.swift in Sources */,
 				5843EEDC205B3FCB006B6595 /* StarWarsSpecieDetailViewController.swift in Sources */,
 				5843EEDA205B3E91006B6595 /* StarWarsStarshipDetailViewController.swift in Sources */,

@@ -26,9 +26,14 @@ class StarWarsPeopleAPIClient
         
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             
-            guard let unwrappedData = data else { print("unwrappedData did not unwrap"); return}
+            //guard let unwrappedData = data else { print("unwrappedData did not unwrap"); return}
+
             
-            let jsonResponseDictionary = try? JSONSerialization.jsonObject(with: unwrappedData, options: []) as! [String: Any]
+            do{
+            
+            if let data = data{
+                
+            let jsonResponseDictionary = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
             
             guard let unwrappedJsonResponseDictionary = jsonResponseDictionary else {
                 print("unwrappedJsonResponseDictionary did not unwrap"); return
@@ -41,6 +46,12 @@ class StarWarsPeopleAPIClient
             starWarsPeopleArray = unwrappedResultsArray
             
             completion(starWarsPeopleArray)
+                }
+            }
+            
+            catch let error{
+                print(error)
+            }
             
         }
         
