@@ -8,7 +8,7 @@
 
 import Foundation
 
-class StarWarsPeople {
+class StarWarsPeople: Decodable {
     
     var name: String?
     var height: String?

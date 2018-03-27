@@ -10,17 +10,26 @@ import UIKit
 
 class StarWarsPeopleTableViewController: UITableViewController {
     
-    let store = StarWarsPeopleDataStore.sharedInstance
-    var page = 1
+    var pageNum = 1
+    var starWarsPeopleArray = [StarWarsPeople]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.backgroundColor = UIColor.black
-        self.store.getStarWarsPeopleInformation(page: self.store.page) { (starwarsPeopleArray) in
-            OperationQueue.main.addOperation {
-                self.tableView.reloadData()
-            }
+        do {
+            try StarWarsPeopleAPIClient.getStarWarsPeopleInformation(page: self.pageNum, completion: { (starWarsPArray) in
+                OperationQueue.main.addOperation {
+                    self.starWarsPeopleArray = starWarsPArray
+                    print("LOOK AT THIS ARRAY ******************")
+                    print(self.starWarsPeopleArray)
+                    print("LOOK AT THIS ARRAY ******************")
+                    self.tableView.reloadData()
+                }
+            })
+        } catch let error{
+            print("error is: \(error.localizedDescription)")
         }
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -32,7 +41,7 @@ class StarWarsPeopleTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.store.starWarsPeopleArray.count
+        return self.starWarsPeopleArray.count
     }
     
     
@@ -40,23 +49,28 @@ class StarWarsPeopleTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "peopleCell", for: indexPath)
         cell.textLabel?.textColor = UIColor.white
         cell.backgroundColor = UIColor.black
-        cell.textLabel?.text = self.store.starWarsPeopleArray[indexPath.row].name
+        cell.textLabel?.text = self.starWarsPeopleArray[indexPath.row].name
         return cell
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        let lastElement = self.store.starWarsPeopleArray.count-1
+        let lastElement = self.starWarsPeopleArray.count-1
         if indexPath.row == lastElement{
             loadMoreData()
         }
     }
     
     func loadMoreData(){
-        self.store.page = self.store.page + 1
-        self.store.getStarWarsPeopleInformation(page: self.store.page) { (newArray) in
-            OperationQueue.main.addOperation({
-                self.tableView.reloadData()
+        self.pageNum = pageNum + 1
+        do {
+            try StarWarsPeopleAPIClient.getStarWarsPeopleInformation(page: self.pageNum, completion: { (starWarsPArray) in
+                OperationQueue.main.addOperation {
+                    self.starWarsPeopleArray = starWarsPArray
+                    self.tableView.reloadData()
+                }
             })
+        } catch let error{
+            print("error is: \(error.localizedDescription)")
         }
     }
     
@@ -64,7 +78,7 @@ class StarWarsPeopleTableViewController: UITableViewController {
         if segue.identifier == "peopleDetailSegue"{
             if let destinationVC = segue.destination as? StarWarsPersonDetailViewController {
                 let neededIndexPath = self.tableView.indexPathForSelectedRow!
-                destinationVC.starWarsPeopleObject = self.store.starWarsPeopleArray[neededIndexPath.row]
+                destinationVC.starWarsPeopleObject = self.starWarsPeopleArray[neededIndexPath.row]
             }
         }
     }
