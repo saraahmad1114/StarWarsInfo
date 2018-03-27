@@ -19,7 +19,7 @@ class StarWarsPeopleTableViewController: UITableViewController {
         do {
             try StarWarsPeopleAPIClient.getStarWarsPeopleInformation(page: self.pageNum, completion: { (starWarsPArray) in
                 OperationQueue.main.addOperation {
-                    self.starWarsPeopleArray = starWarsPArray
+                    self.starWarsPeopleArray.append(contentsOf: starWarsPArray)
                     print("LOOK AT THIS ARRAY ******************")
                     print(self.starWarsPeopleArray)
                     print("LOOK AT THIS ARRAY ******************")
@@ -65,7 +65,7 @@ class StarWarsPeopleTableViewController: UITableViewController {
         do {
             try StarWarsPeopleAPIClient.getStarWarsPeopleInformation(page: self.pageNum, completion: { (starWarsPArray) in
                 OperationQueue.main.addOperation {
-                    self.starWarsPeopleArray = starWarsPArray
+                    self.starWarsPeopleArray.append(contentsOf: starWarsPArray)
                     self.tableView.reloadData()
                 }
             })

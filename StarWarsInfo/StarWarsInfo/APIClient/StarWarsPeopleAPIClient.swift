@@ -25,9 +25,13 @@ class StarWarsPeopleAPIClient
             guard let unwrappedData = data else { print("unwrappedData did not unwrap"); return}
             
             do {
-                let starWarsPeopleDataArray = try JSONDecoder().decode([StarWarsPeople].self, from: unwrappedData)
+                let starWarsPeopleDataArray = try JSONDecoder().decode(MainJson.self, from: unwrappedData)
                 
-                completion(starWarsPeopleDataArray)
+                let resultsArray = starWarsPeopleDataArray.results
+                
+                print(resultsArray)
+                
+                completion(resultsArray)
             }
             catch let error {
                 print("Error occured here: \(error.localizedDescription)")
