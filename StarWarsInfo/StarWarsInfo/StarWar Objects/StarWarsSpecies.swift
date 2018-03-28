@@ -9,9 +9,10 @@
 import Foundation
 
 class MainStarWarsSpeciesJson: Decodable{
+    
     var count: Int
-    var next: String
-    var previous: String
+    var next: String?
+    var previous: String?
     var results: [StarWarsSpecies]
 }
 

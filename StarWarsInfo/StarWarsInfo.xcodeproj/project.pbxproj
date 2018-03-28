@@ -241,8 +241,8 @@
 			isa = PBXGroup;
 			children = (
 				5843EEC8205B1C41006B6595 /* StarWarsPeopleTableViewController.swift */,
-				5843EECA205B1C63006B6595 /* StarWarsStarshipTableViewController.swift */,
 				5843EECC205B1C74006B6595 /* StarWarsSpecieTableViewController.swift */,
+				5843EECA205B1C63006B6595 /* StarWarsStarshipTableViewController.swift */,
 				5843EECE205B1C86006B6595 /* StarWarsVehicleTableViewController.swift */,
 				5843EED0205B1C98006B6595 /* StarWarsFilmTableViewController.swift */,
 				5843EEC6205B1C19006B6595 /* StarWarsPlanetTableViewController.swift */,

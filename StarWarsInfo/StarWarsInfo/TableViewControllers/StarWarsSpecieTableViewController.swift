@@ -10,15 +10,21 @@ import UIKit
 
 class StarWarsSpecieTableViewController: UITableViewController {
 
-    let store = StarWarsSpeciesDataStore.sharedInstance
+    var pageNum = 1
+    var starWarsSpeciesArr = [StarWarsSpecies]()
     
     override func viewDidLoad() {
         self.tableView.backgroundColor = UIColor.black
         super.viewDidLoad()
-        self.store.getStarWarsSpeciesInformation(page: self.store.page) { (speciesArray) in
-            OperationQueue.main.addOperation {
-                self.tableView.reloadData()
-            }
+        do {
+            try StarWarsSpeciesAPIClient.getStarWarsSpeciesInformation(page: self.pageNum, completion: { (starSpecies) in
+                OperationQueue.main.addOperation {
+                    self.starWarsSpeciesArr.append(contentsOf: starSpecies)
+                    self.tableView.reloadData()
+                }
+            })
+        } catch let error{
+            print("error is: \(error.localizedDescription)")
         }
     }
     
@@ -31,7 +37,7 @@ class StarWarsSpecieTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.store.starWarsSpeciesArray.count
+        return self.starWarsSpeciesArr.count
     }
     
     
@@ -39,31 +45,37 @@ class StarWarsSpecieTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "speciesCell", for: indexPath)
         cell.textLabel?.textColor = UIColor.white
         cell.backgroundColor = UIColor.black
-        cell.textLabel?.text = self.store.starWarsSpeciesArray[indexPath.row].name
+        cell.textLabel?.text = self.starWarsSpeciesArr[indexPath.row].name
         return cell
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        let lastElement = self.store.starWarsSpeciesArray.count-1
+        let lastElement = self.starWarsSpeciesArr.count-1
         if indexPath.row == lastElement{
             loadMoreData()
         }
     }
     
     func loadMoreData(){
-        self.store.page = self.store.page + 1
-        self.store.getStarWarsSpeciesInformation(page: self.store.page) { (speciesArray) in
-            OperationQueue.main.addOperation({
-                self.tableView.reloadData()
+        self.pageNum = self.pageNum + 1
+        do {
+            try StarWarsSpeciesAPIClient.getStarWarsSpeciesInformation(page: self.pageNum, completion: { (starSpecies) in
+                OperationQueue.main.addOperation {
+                    self.starWarsSpeciesArr.append(contentsOf: starSpecies)
+                    self.tableView.reloadData()
+                }
             })
+        } catch let error{
+            print("error is: \(error.localizedDescription)")
         }
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "speciesSegue"{
             if let destinationVC = segue.destination as? StarWarsSpecieDetailViewController{
                 let neededIndexPath = self.tableView.indexPathForSelectedRow
-                destinationVC.specieObject = self.store.starWarsSpeciesArray[(neededIndexPath?.row)!]
+                destinationVC.specieObject = self.starWarsSpeciesArr[(neededIndexPath?.row)!]
             }
         }
     }

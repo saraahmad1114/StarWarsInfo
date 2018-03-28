@@ -28,9 +28,7 @@ class StarWarsPeopleAPIClient
                 let starWarsPeopleDataArray = try JSONDecoder().decode(MainStarWarsPeopleJson.self, from: unwrappedData)
                 
                 let resultsArray = starWarsPeopleDataArray.results
-                
-                //print(resultsArray)
-                
+                            
                 completion(resultsArray)
             }
             catch let error {

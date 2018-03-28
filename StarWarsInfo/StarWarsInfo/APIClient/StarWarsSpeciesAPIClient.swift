@@ -30,6 +30,10 @@ class StarWarsSpeciesAPIClient {
                 
                 let resultsArray = starWarsSpeciesDataArray.results
                 
+                print("**************************")
+                print(resultsArray)
+                print("**************************")
+                
                 completion(resultsArray)
             }
                 
