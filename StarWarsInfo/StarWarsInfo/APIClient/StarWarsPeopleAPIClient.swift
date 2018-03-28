@@ -25,7 +25,7 @@ class StarWarsPeopleAPIClient
             guard let unwrappedData = data else { print("unwrappedData did not unwrap"); return}
             
             do {
-                let starWarsPeopleDataArray = try JSONDecoder().decode(MainJson.self, from: unwrappedData)
+                let starWarsPeopleDataArray = try JSONDecoder().decode(MainStarWarsPeopleJson.self, from: unwrappedData)
                 
                 let resultsArray = starWarsPeopleDataArray.results
                 

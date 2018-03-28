@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MainJson: Decodable{
+class MainStarWarsPeopleJson: Decodable{
     
     var count: Int
     var next: String?
