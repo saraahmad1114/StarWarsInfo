@@ -29,7 +29,7 @@ class StarWarsPeopleAPIClient
                 
                 let resultsArray = starWarsPeopleDataArray.results
                 
-                print(resultsArray)
+                //print(resultsArray)
                 
                 completion(resultsArray)
             }

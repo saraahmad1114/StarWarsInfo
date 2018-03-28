@@ -10,7 +10,7 @@ import Foundation
 
 class StarWarsSpeciesAPIClient {
     
-    class func getStarWarsSpeciesInformation (page: Int, completion: @escaping(Array<Any>)-> ()){
+    class func getStarWarsSpeciesInformation (page: Int, completion: @escaping([StarWarsSpecies])-> ()) throws {
         
         var jsonArray = Array<Any>()
         
@@ -26,17 +26,20 @@ class StarWarsSpeciesAPIClient {
             
             guard let unwrappedData = data else{print("unwrappedData did not unwrap"); return}
             
-            let jsonDictionary = try? JSONSerialization.jsonObject(with: unwrappedData, options: []) as! [String: Any]
-            
-            guard let unwrappedJsonDictionary = jsonDictionary else {print("unwrappedJsonDictionary did not unwrap"); return}
-            
-            let resultsArray = unwrappedJsonDictionary["results"] as? Array<Any>
-            
-            guard let unwrappedResultsArray = resultsArray else {print("unwrappedResultsArray did not unwrap"); return}
-            
-            jsonArray = unwrappedResultsArray
-            
-            completion(jsonArray)
+            do{
+                
+                let starWarsSpeciesDataArray = try JSONDecoder().decode(MainStarWarsSpeciesJson.self, from: unwrappedData)
+                
+                let resultsArray = starWarsSpeciesDataArray.results
+                
+                completion(resultsArray)
+            }
+                
+            catch let error {
+                
+                print("Error occured here: \(error.localizedDescription)")
+                
+            }
         }
         task.resume()
     }
