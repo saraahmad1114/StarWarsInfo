@@ -29,7 +29,7 @@ struct StarWarsStarship: Decodable{
     var cargoCapacity: String?
     var starshipClass: String?
 }
-//
+
 //    init(jsonDictionary: [String: Any]) {
 //        guard
 //            let name = jsonDictionary["name"] as? String,

@@ -10,10 +10,8 @@ import Foundation
 
 class StarWarsStarshipsAPIClient{
     
-    class func getStarWarsStarshipsInformation (page: Int, completion: @escaping(Array<Any>)-> ()){
-        
-        var jsonStarWarsStarshipsArray = Array<Any>()
-        
+    class func getStarWarsStarshipsInformation (page: Int, completion: @escaping([StarWarsStarship])-> ()) throws {
+                
         let starWarsStarshipURL = "https://swapi.co/api/starships/?page=\(page)"
         
         let convertedURL = URL(string: starWarsStarshipURL)
@@ -26,20 +24,21 @@ class StarWarsStarshipsAPIClient{
             
             guard let unwrappedData = data else{print("unwrappedData did not unwrap"); return}
             
-            let jsonDictionary = try? JSONSerialization.jsonObject(with: unwrappedData, options: []) as! [String: Any]
-            
-            guard let unwrappedJsonDictionary = jsonDictionary else {print("unwrappedJsonDictionary did not unwrap"); return}
-            
-            let resultsArray = unwrappedJsonDictionary["results"] as? Array<Any>
-            
-            guard let unwrappedResultsArray = resultsArray else {print("unwrappedResultsArray did not unwrap"); return}
-            
-            jsonStarWarsStarshipsArray = unwrappedResultsArray
-            
-            completion(jsonStarWarsStarshipsArray)
+            do{
+                
+                let starWarsStarshipDataArray = try JSONDecoder().decode(MainStarWarsStarshipJson.self, from: unwrappedData)
+                
+                let resultsArray = starWarsStarshipDataArray.results
+                
+                completion(resultsArray)
+            }
+                
+            catch let error {
+                
+                print("Error occured here: \(error.localizedDescription)")
+                
+            }
         }
         task.resume()
-        
     }
-    
 }
