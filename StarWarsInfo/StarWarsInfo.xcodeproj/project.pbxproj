@@ -202,8 +202,8 @@
 			children = (
 				5843EE992059EDCB006B6595 /* StarWarsPeopleAPIClient.swift */,
 				5843EE9F2059F0CA006B6595 /* StarWarsSpeciesAPIClient.swift */,
-				5843EE9B2059EF5C006B6595 /* StarWarsPlanetAPIClient.swift */,
 				5843EE9D2059F03C006B6595 /* StarWarsStarshipsAPIClient.swift */,
+				5843EE9B2059EF5C006B6595 /* StarWarsPlanetAPIClient.swift */,
 				5843EEA32059F227006B6595 /* StarWarsFilmsAPIClient.swift */,
 				5843EEA12059F1AD006B6595 /* StarWarsVehicleAPIClient.swift */,
 			);
