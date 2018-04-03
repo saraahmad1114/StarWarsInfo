@@ -27,7 +27,6 @@
 		5843EEAD2059F92B006B6595 /* StarWarsPlanet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843EEAC2059F92B006B6595 /* StarWarsPlanet.swift */; };
 		5843EEAF2059F97B006B6595 /* StarWarsPeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843EEAE2059F97B006B6595 /* StarWarsPeople.swift */; };
 		5843EEB12059F9AE006B6595 /* StarWarsStarship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843EEB02059F9AE006B6595 /* StarWarsStarship.swift */; };
-		5843EEBD2059FBBF006B6595 /* StarWarsStarshipDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843EEBC2059FBBF006B6595 /* StarWarsStarshipDataStore.swift */; };
 		5843EEBF2059FC26006B6595 /* StarWarsPlanetsDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843EEBE2059FC26006B6595 /* StarWarsPlanetsDataStore.swift */; };
 		5843EEC12059FC8D006B6595 /* StarWarsVehicleDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843EEC02059FC8D006B6595 /* StarWarsVehicleDataStore.swift */; };
 		5843EEC32059FCD5006B6595 /* StarWarsFilmsDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843EEC22059FCD5006B6595 /* StarWarsFilmsDataStore.swift */; };
@@ -89,7 +88,6 @@
 		5843EEAC2059F92B006B6595 /* StarWarsPlanet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPlanet.swift; sourceTree = "<group>"; };
 		5843EEAE2059F97B006B6595 /* StarWarsPeople.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPeople.swift; sourceTree = "<group>"; };
 		5843EEB02059F9AE006B6595 /* StarWarsStarship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsStarship.swift; sourceTree = "<group>"; };
-		5843EEBC2059FBBF006B6595 /* StarWarsStarshipDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsStarshipDataStore.swift; sourceTree = "<group>"; };
 		5843EEBE2059FC26006B6595 /* StarWarsPlanetsDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPlanetsDataStore.swift; sourceTree = "<group>"; };
 		5843EEC02059FC8D006B6595 /* StarWarsVehicleDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsVehicleDataStore.swift; sourceTree = "<group>"; };
 		5843EEC22059FCD5006B6595 /* StarWarsFilmsDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsFilmsDataStore.swift; sourceTree = "<group>"; };
@@ -226,7 +224,6 @@
 		5843EEBB2059FB5F006B6595 /* StarWarsDatastore */ = {
 			isa = PBXGroup;
 			children = (
-				5843EEBC2059FBBF006B6595 /* StarWarsStarshipDataStore.swift */,
 				5843EEC02059FC8D006B6595 /* StarWarsVehicleDataStore.swift */,
 				5843EEC22059FCD5006B6595 /* StarWarsFilmsDataStore.swift */,
 				5843EEBE2059FC26006B6595 /* StarWarsPlanetsDataStore.swift */,
@@ -423,7 +420,6 @@
 				5843EED1205B1C98006B6595 /* StarWarsFilmTableViewController.swift in Sources */,
 				5843EEC12059FC8D006B6595 /* StarWarsVehicleDataStore.swift in Sources */,
 				5843EEA42059F227006B6595 /* StarWarsFilmsAPIClient.swift in Sources */,
-				5843EEBD2059FBBF006B6595 /* StarWarsStarshipDataStore.swift in Sources */,
 				5843EE7120571F59006B6595 /* StarWarsInfo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

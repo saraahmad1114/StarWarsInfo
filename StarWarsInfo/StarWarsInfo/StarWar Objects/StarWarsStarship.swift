@@ -9,7 +9,6 @@
 import Foundation
 
 class MainStarWarsStarshipJson: Decodable{
-    
     var count: Int
     var next: String?
     var previous: String?
@@ -17,7 +16,6 @@ class MainStarWarsStarshipJson: Decodable{
 }
 
 struct StarWarsStarship: Decodable{
-
     var name: String?
     var model: String?
     var manufacturer: String?

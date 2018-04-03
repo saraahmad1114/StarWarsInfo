@@ -9,7 +9,6 @@
 import Foundation
 
 class MainStarWarsPlanetJson: Decodable{
-    
     var count: Int
     var next: String?
     var previous: String?

@@ -10,10 +10,8 @@ import Foundation
 
 class StarWarsPlanetsAPIClient{
     
-    class func getStarWarsPlanetsInformation (page: Int, completion:@escaping(Array<Any>) -> ()){
-        
-        var starWarsPlanetsArray = Array<Any>()
-        
+    class func getStarWarsPlanetsInformation (page: Int, completion:@escaping([StarWarsPlanet]) -> ()) throws {
+                
         let starWarsPlanetsURL = "https://swapi.co/api/planets/?page=\(page)"
         
         let convertedURL = URL(string: starWarsPlanetsURL)
@@ -26,21 +24,22 @@ class StarWarsPlanetsAPIClient{
             
             guard let unwrappedData = data else {print("unwrappedData did not unwrap"); return}
             
-            let jsonResponseDictionary = try? JSONSerialization.jsonObject(with: unwrappedData, options: []) as! [String: Any]
-            
-            guard let unwrappedJson = jsonResponseDictionary else{print("unwrappedJson did not unwrap"); return}
-            
-            let resultsArray = unwrappedJson["results"] as? Array<Any>
-            
-            guard let unwrappedResultsArray = resultsArray else{print("unwrappedResultsarray did not unwrap"); return}
-            
-            starWarsPlanetsArray = unwrappedResultsArray
-            
-            completion(starWarsPlanetsArray)
-            
+            do{
+                
+                let starWarsPlanetsDataArray = try JSONDecoder().decode(MainStarWarsPlanetJson.self, from: unwrappedData)
+                
+                let resultsArray = starWarsPlanetsDataArray.results
+                
+                completion(resultsArray)
+            }
+                
+            catch let error {
+                
+                print("Error occured here: \(error.localizedDescription)")
+                
+            }
         }
         
         task.resume()
     }
-    
 }
