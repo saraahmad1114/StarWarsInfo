@@ -10,7 +10,7 @@ import UIKit
 
 class StarWarsVehicleDetailViewController: UIViewController {
     
-     var vehicleObj: StarWarsVehicles?
+     var vehicleObj: StarWarsVehicle?
 
     override func viewDidLoad() {
         super.viewDidLoad()

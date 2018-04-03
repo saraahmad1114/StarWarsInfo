@@ -28,7 +28,7 @@ class StarWarsVehicleAPIClient {
                 
                 let vehicleArray = try JSONDecoder().decode(MainStarWarsVehiclesJson.self, from: unwrappedData)
                 
-                let resultsArray = vehicleArrayy.results
+                let resultsArray = vehicleArray.results
                 
                 completion(resultsArray)
             }

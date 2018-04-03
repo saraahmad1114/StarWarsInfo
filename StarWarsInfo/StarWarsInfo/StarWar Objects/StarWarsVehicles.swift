@@ -8,7 +8,8 @@
 
 import Foundation
 
-class MainStarWarsVehiclesJson: Decodable{
+class MainStarWarsVehiclesJson: Decodable {
+    
     var count: Int
     var next: String?
     var previous: String?
