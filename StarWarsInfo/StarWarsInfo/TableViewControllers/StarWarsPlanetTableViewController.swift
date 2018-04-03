@@ -10,15 +10,22 @@ import UIKit
 
 class StarWarsPlanetTableViewController: UITableViewController {
 
-    let store = StarWarsPlanetsDataStore.sharedInstance
+    //let store = StarWarsPlanetsDataStore.sharedInstance
+    var pageNum = 1
+    var starWarsPlanetArr = [StarWarsPlanet]()
     
     override func viewDidLoad() {
         self.tableView.backgroundColor = UIColor.black
         super.viewDidLoad()
-        self.store.getStarWarsPlanetsInformation(page: self.store.page) { (planetsArray) in
-            OperationQueue.main.addOperation {
-                self.tableView.reloadData()
-            }
+        do {
+            try StarWarsPlanetsAPIClient.getStarWarsPlanetsInformation(page: self.pageNum, completion: { (starWarsPlanetsInfo) in
+                OperationQueue.main.addOperation {
+                    self.starWarsPlanetArr.append(contentsOf: starWarsPlanetsInfo)
+                    self.tableView.reloadData()
+                }
+            })
+        } catch let error{
+            print("error is: \(error.localizedDescription)")
         }
     }
     
@@ -31,31 +38,36 @@ class StarWarsPlanetTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.store.starWarsPlanetsArray.count
+        return self.starWarsPlanetArr.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "planetCell", for: indexPath)
         cell.textLabel?.textColor = UIColor.white
         cell.backgroundColor = UIColor.black
-        cell.textLabel?.text = self.store.starWarsPlanetsArray[indexPath.row].name
+        cell.textLabel?.text = self.starWarsPlanetArr[indexPath.row].name
         return cell
     }
     
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        let lastElement = self.store.starWarsPlanetsArray.count-1
+        let lastElement = self.starWarsPlanetArr.count-1
         if indexPath.row == lastElement{
             loadMoreData()
         }
     }
     
     func loadMoreData(){
-        self.store.page = self.store.page + 1
-        self.store.getStarWarsPlanetsInformation(page: self.store.page) { (newArray) in
-            OperationQueue.main.addOperation({
-                self.tableView.reloadData()
+        self.pageNum = self.pageNum + 1
+        do {
+            try StarWarsPlanetsAPIClient.getStarWarsPlanetsInformation(page: self.pageNum, completion: { (starWarsPlanetsInfo) in
+                OperationQueue.main.addOperation {
+                    self.starWarsPlanetArr.append(contentsOf: starWarsPlanetsInfo)
+                    self.tableView.reloadData()
+                }
             })
+        } catch let error{
+            print("error is: \(error.localizedDescription)")
         }
     }
     
@@ -63,7 +75,7 @@ class StarWarsPlanetTableViewController: UITableViewController {
         if segue.identifier == "planetSegue"{
             if let destinationVC = segue.destination as? StarWarsPlanetDetailViewController{
                 let neededIndexPath = self.tableView.indexPathForSelectedRow!
-                destinationVC.starWarsPlanetObject = self.store.starWarsPlanetsArray[neededIndexPath.row]
+                destinationVC.starWarsPlanetObject = self.starWarsPlanetArr[neededIndexPath.row]
             }
         }
     }

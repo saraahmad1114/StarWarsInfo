@@ -11,7 +11,7 @@ import Foundation
 class StarWarsPlanetsAPIClient{
     
     class func getStarWarsPlanetsInformation (page: Int, completion:@escaping([StarWarsPlanet]) -> ()) throws {
-                
+        
         let starWarsPlanetsURL = "https://swapi.co/api/planets/?page=\(page)"
         
         let convertedURL = URL(string: starWarsPlanetsURL)
@@ -32,14 +32,12 @@ class StarWarsPlanetsAPIClient{
                 
                 completion(resultsArray)
             }
-                
+
             catch let error {
                 
                 print("Error occured here: \(error.localizedDescription)")
-                
             }
         }
-        
         task.resume()
     }
 }
