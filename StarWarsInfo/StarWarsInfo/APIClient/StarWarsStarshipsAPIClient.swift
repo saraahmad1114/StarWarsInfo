@@ -11,7 +11,7 @@ import Foundation
 class StarWarsStarshipsAPIClient{
     
     class func getStarWarsStarshipsInformation (page: Int, completion: @escaping([StarWarsStarship])-> ()) throws {
-                
+        
         let starWarsStarshipURL = "https://swapi.co/api/starships/?page=\(page)"
         
         let convertedURL = URL(string: starWarsStarshipURL)

@@ -21,11 +21,11 @@ struct StarWarsStarship: Decodable{
     var name: String?
     var model: String?
     var manufacturer: String?
-    var costInCredits: String?
+    var cost_in_credits: String?
     var length: String?
-    var maxAtmosphericSpeed: String?
+    var max_atmosphering_speed: String?
     var crew: String?
-    var cargoCapacity: String?
-    var starshipClass: String?
+    var cargo_capacity: String?
+    var starship_class: String?
 }
 

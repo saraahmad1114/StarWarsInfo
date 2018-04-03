@@ -216,8 +216,8 @@
 				5843EEAE2059F97B006B6595 /* StarWarsPeople.swift */,
 				5843EEA62059F7B2006B6595 /* StarWarsSpecies.swift */,
 				5843EEB02059F9AE006B6595 /* StarWarsStarship.swift */,
-				5843EEAA2059F904006B6595 /* StarWarsFilms.swift */,
 				5843EEAC2059F92B006B6595 /* StarWarsPlanet.swift */,
+				5843EEAA2059F904006B6595 /* StarWarsFilms.swift */,
 				5843EEA82059F886006B6595 /* StarWarsVehicles.swift */,
 			);
 			path = "StarWar Objects";
@@ -226,9 +226,9 @@
 		5843EEBB2059FB5F006B6595 /* StarWarsDatastore */ = {
 			isa = PBXGroup;
 			children = (
+				5843EEBC2059FBBF006B6595 /* StarWarsStarshipDataStore.swift */,
 				5843EEC02059FC8D006B6595 /* StarWarsVehicleDataStore.swift */,
 				5843EEC22059FCD5006B6595 /* StarWarsFilmsDataStore.swift */,
-				5843EEBC2059FBBF006B6595 /* StarWarsStarshipDataStore.swift */,
 				5843EEBE2059FC26006B6595 /* StarWarsPlanetsDataStore.swift */,
 			);
 			path = StarWarsDatastore;
@@ -527,7 +527,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -578,7 +578,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
