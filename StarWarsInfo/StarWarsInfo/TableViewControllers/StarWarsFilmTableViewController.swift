@@ -10,15 +10,23 @@ import UIKit
 
 class StarWarsFilmTableViewController: UITableViewController {
 
-    let store = StarWarsFilmsDataStore.sharedInstance
+//    let store = StarWarsFilmsDataStore.sharedInstance
+    //starvar pageNum = 1
+    var starWarsFilmsArr = [StarWarsFilm]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.backgroundColor = UIColor.black
-        self.store.getStarWarsFilms { (filmsArray) in
-            OperationQueue.main.addOperation {
-                self.tableView.reloadData()
-            }
+        
+        do {
+            try StarWarsFilmsAPIClient.getStarWarsFilmsInformation(completion: { (starWarArray) in
+                OperationQueue.main.addOperation {
+                    self.starWarsFilmsArr.append(contentsOf: starWarArray)
+                    self.tableView.reloadData()
+                }
+            })
+        } catch let error{
+            print("error is: \(error.localizedDescription)")
         }
     }
     
@@ -31,14 +39,14 @@ class StarWarsFilmTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.store.starWarsFilmsArray.count
+        return self.starWarsFilmsArr.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "filmCell", for: indexPath)
         cell.textLabel?.textColor = UIColor.white
         cell.backgroundColor = UIColor.black
-        cell.textLabel?.text = self.store.starWarsFilmsArray[indexPath.row].title
+        cell.textLabel?.text = self.starWarsFilmsArr[indexPath.row].title
         return cell
     }
     
@@ -46,7 +54,7 @@ class StarWarsFilmTableViewController: UITableViewController {
         if segue.identifier == "segueFilm"{
             if let destinationVC = segue.destination as? StarWarsFilmDetailViewController{
                 let neededIndexPath = self.tableView.indexPathForSelectedRow
-                destinationVC.filmObj = self.store.starWarsFilmsArray[(neededIndexPath?.row)!]
+                destinationVC.filmObj = self.starWarsFilmsArr[(neededIndexPath?.row)!]
             }
         }
     }

@@ -9,8 +9,7 @@
 import UIKit
 
 class StarWarsPlanetTableViewController: UITableViewController {
-
-    //let store = StarWarsPlanetsDataStore.sharedInstance
+    
     var pageNum = 1
     var starWarsPlanetArr = [StarWarsPlanet]()
     

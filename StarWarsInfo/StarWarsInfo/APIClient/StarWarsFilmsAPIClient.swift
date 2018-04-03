@@ -10,7 +10,7 @@ import Foundation
 
 class StarWarsFilmsAPIClient{
     
-    class func getStarWarsFilmsInformation (completion:@escaping([StarWarsFilm]) -> ()){
+    class func getStarWarsFilmsInformation (completion:@escaping([StarWarsFilm]) -> ()) throws {
                 
         let filmsUrl = "https://swapi.co/api/films"
         
@@ -37,9 +37,7 @@ class StarWarsFilmsAPIClient{
                 
                 print("Error occured here: \(error.localizedDescription)")
             }
-            
         }
         task.resume()
     }
-    
 }
