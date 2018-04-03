@@ -10,10 +10,8 @@ import Foundation
 
 class StarWarsVehicleAPIClient {
     
-    class func getStarWarsVehicleInformation(page: Int, completion: @escaping(Array<Any>)-> ()){
-        
-        var jsonArray = Array<Any>()
-        
+    class func getStarWarsVehicleInformation(page: Int, completion: @escaping([StarWarsVehicle])-> ()) throws {
+                
         let url = "https://swapi.co/api/vehicles/?page=\(page)"
         
         let convertedUrl = URL(string: url)
@@ -26,17 +24,19 @@ class StarWarsVehicleAPIClient {
             
             guard let unwrappedData = data else {print("unwrappedData did not unwrap"); return}
             
-            let jsonDictionary = try? JSONSerialization.jsonObject(with: unwrappedData, options: []) as! [String: Any]
-            
-            guard let unwrappedJsonDictionary = jsonDictionary else {print("unwrappedJsonDictionary did not unwrap"); return}
-            
-            let resultsArray = unwrappedJsonDictionary["results"] as? Array<Any>
-            
-            guard let unwrappedResultsArray = resultsArray else {print("unwrappedResultsArray did not unwrap"); return}
-            
-            jsonArray = unwrappedResultsArray
-            
-            completion(jsonArray)
+            do{
+                
+                let vehicleArray = try JSONDecoder().decode(MainStarWarsVehiclesJson.self, from: unwrappedData)
+                
+                let resultsArray = vehicleArrayy.results
+                
+                completion(resultsArray)
+            }
+                
+            catch let error {
+                
+                print("Error occured here: \(error.localizedDescription)")
+            }
         }
         task.resume()
     }
