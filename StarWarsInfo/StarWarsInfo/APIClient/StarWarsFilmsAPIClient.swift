@@ -10,10 +10,8 @@ import Foundation
 
 class StarWarsFilmsAPIClient{
     
-    class func getStarWarsFilmsInformation (completion:@escaping(Array<Any>) -> ()){
-        
-        var filmsJSonArray = Array<Any>()
-        
+    class func getStarWarsFilmsInformation (completion:@escaping([StarWarsFilm]) -> ()){
+                
         let filmsUrl = "https://swapi.co/api/films"
         
         let convertedUrl = URL(string: filmsUrl)
@@ -26,17 +24,20 @@ class StarWarsFilmsAPIClient{
             
             guard let unwrappedData = data else {print("data did not unwrap"); return}
             
-            let jsonDictionary = try? JSONSerialization.jsonObject(with: unwrappedData, options: []) as! [String: Any]
+            do{
+                
+                let starWarsFilmsDataArray = try JSONDecoder().decode(MainStarWarsFilmsJson.self, from: unwrappedData)
+                
+                let resultsArray = starWarsFilmsDataArray.results
+                
+                completion(resultsArray)
+            }
+                
+            catch let error {
+                
+                print("Error occured here: \(error.localizedDescription)")
+            }
             
-            guard let uwnrappedJsonDictionary = jsonDictionary else {print("jsonDictionary did not unwrap"); return}
-            
-            let resultsArray = uwnrappedJsonDictionary["results"] as? Array<Any>
-            
-            guard let unwrappedResultsArray = resultsArray else {print("resultsArray did not unwrap"); return}
-            
-            filmsJSonArray =  unwrappedResultsArray
-            
-            completion(filmsJSonArray)
         }
         task.resume()
     }

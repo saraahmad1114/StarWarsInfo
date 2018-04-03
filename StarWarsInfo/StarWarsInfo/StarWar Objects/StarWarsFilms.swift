@@ -8,30 +8,18 @@
 
 import Foundation
 
-class StarWarsFilms {
+class MainStarWarsFilmsJson: Decodable {
     
-    var title: String?
-    var episodeId: Int?
-    var opening: String?
-    var director: String?
-    var producer: String?
-    var releaseDate: String?
+    var count: Int
+    var next: String?
+    var previous: String?
+    var results: [StarWarsFilm]
     
-    init(jsonDictionary: [String: Any]) {
-        guard
-            let title = jsonDictionary["title"] as? String,
-            let episodeId = jsonDictionary["episode_id"] as? Int,
-            let opening = jsonDictionary["opening_crawl"] as? String,
-            let director = jsonDictionary["director"] as? String,
-            let producer = jsonDictionary["producer"] as? String,
-            let releaseDate = jsonDictionary["release_date"] as? String
-            else{print("did not unwrap"); return}
-        
-        self.title = title
-        self.episodeId = episodeId
-        self.opening = opening
-        self.director = director
-        self.producer = producer
-        self.releaseDate = releaseDate
-    }
 }
+struct StarWarsFilm: Decodable {
+    
+    var title: String
+    var episode_id: Int
+    var opening_crawl: String?
+}
+
