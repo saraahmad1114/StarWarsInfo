@@ -53,15 +53,10 @@ class StarWarsSpecieDetailViewController: UIViewController {
         if let language = specieObj.language{
             self.languageUpdateLabel.text = language
         }
-    
-
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-
 }
