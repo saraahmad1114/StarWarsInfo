@@ -11,7 +11,15 @@ import UIKit
 class StarWarsSpecieDetailViewController: UIViewController {
     
     var specieObject: StarWarsSpecies?
-
+    @IBOutlet weak var nameUpdateLabel: UILabel!
+    @IBOutlet weak var classificationUpdateLabel: UILabel!
+    @IBOutlet weak var designationUpdateLabel: UILabel!
+    @IBOutlet weak var heightUpdateLabel: UILabel!
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -359,6 +359,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QU3-tA-Sjj"/>
                     </view>
+                    <connections>
+                        <outlet property="classificationUpdateLabel" destination="koE-SA-zxQ" id="gnf-hZ-ov0"/>
+                        <outlet property="designationUpdateLabel" destination="rGp-wC-zUE" id="vxU-XT-19x"/>
+                        <outlet property="heightUpdateLabel" destination="RGh-4a-xtO" id="1gR-II-BSN"/>
+                        <outlet property="nameUpdateLabel" destination="QjD-ye-uEt" id="FFn-LK-lHO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBl-zV-n6u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
