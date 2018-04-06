@@ -269,6 +269,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="P86-A2-zdM"/>
                     </view>
+                    <connections>
+                        <outlet property="costUpdateLabel" destination="J7S-Ee-2DJ" id="saw-Wl-H3J"/>
+                        <outlet property="crewUpdateLabel" destination="5m1-FK-kwh" id="RXh-ct-8cN"/>
+                        <outlet property="manufacturerUpdateLabel" destination="32l-dD-Hxc" id="2cy-Jq-rXQ"/>
+                        <outlet property="maxSpeedUpdate" destination="s17-RP-Mqn" id="CRA-h8-Tru"/>
+                        <outlet property="modelUpdateLabel" destination="648-it-jHS" id="MzS-w2-J7T"/>
+                        <outlet property="nameUpdateLabel" destination="Zp6-hW-thb" id="GEt-5d-6bL"/>
+                        <outlet property="vehicleClassUpdateLabel" destination="BcO-ue-x1e" id="e3l-IZ-12y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HGZ-1u-SPJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
