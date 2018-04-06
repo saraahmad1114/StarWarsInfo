@@ -15,9 +15,11 @@ class StarWarsSpecieDetailViewController: UIViewController {
     @IBOutlet weak var classificationUpdateLabel: UILabel!
     @IBOutlet weak var designationUpdateLabel: UILabel!
     @IBOutlet weak var heightUpdateLabel: UILabel!
-    
-    
-    
+    @IBOutlet weak var skinColorUpdateLabel: UILabel!
+    @IBOutlet weak var hairColorUpateLabel: UILabel!
+    @IBOutlet weak var eyeColorUpdateLabel: UILabel!
+    @IBOutlet weak var lifespanUpdateLabel: UILabel!
+    @IBOutlet weak var languageUpdateLabel: UILabel!
     
     
     override func viewDidLoad() {

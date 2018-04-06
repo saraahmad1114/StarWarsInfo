@@ -362,8 +362,13 @@
                     <connections>
                         <outlet property="classificationUpdateLabel" destination="koE-SA-zxQ" id="gnf-hZ-ov0"/>
                         <outlet property="designationUpdateLabel" destination="rGp-wC-zUE" id="vxU-XT-19x"/>
+                        <outlet property="eyeColorUpdateLabel" destination="sez-hc-Zwc" id="XGp-2u-7De"/>
+                        <outlet property="hairColorUpateLabel" destination="032-XG-N7H" id="EGf-F5-DXT"/>
                         <outlet property="heightUpdateLabel" destination="RGh-4a-xtO" id="1gR-II-BSN"/>
+                        <outlet property="languageUpdateLabel" destination="cZ1-lJ-ikD" id="ORA-7b-Oz2"/>
+                        <outlet property="lifespanUpdateLabel" destination="fcb-20-tgg" id="YRf-ry-oWo"/>
                         <outlet property="nameUpdateLabel" destination="QjD-ye-uEt" id="FFn-LK-lHO"/>
+                        <outlet property="skinColorUpdateLabel" destination="wDH-k9-2MJ" id="Grh-kD-cfV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBl-zV-n6u" userLabel="First Responder" sceneMemberID="firstResponder"/>
