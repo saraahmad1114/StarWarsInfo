@@ -38,6 +38,15 @@ class StarWarsSpecieDetailViewController: UIViewController {
         if let height = specieObj.average_height{
             self.heightUpdateLabel.text = height
         }
+        if let skinColor = specieObj.skin_colors{
+            self.skinColorUpdateLabel.text = skinColor
+        }
+        if let hairColor = specieObj.hair_colors{
+            self.hairColorUpateLabel.text = hairColor
+        }
+        if let eyeColor = specieObj.eye_colors{
+            self.eyeColorUpdateLabel.text = eyeColor
+        }
         
     
 
