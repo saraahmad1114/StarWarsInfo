@@ -32,6 +32,13 @@ class StarWarsSpecieDetailViewController: UIViewController {
         if let classification = specieObj.classification{
             self.classificationUpdateLabel.text = classification
         }
+        if let designation = specieObj.designation{
+            self.designationUpdateLabel.text = designation
+        }
+        if let height = specieObj.average_height{
+            self.heightUpdateLabel.text = height
+        }
+        
     
 
     }
