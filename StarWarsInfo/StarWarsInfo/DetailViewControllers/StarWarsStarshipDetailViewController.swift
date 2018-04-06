@@ -15,7 +15,10 @@ class StarWarsStarshipDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        guard let starShipObj = self.starShipObject else {print("did not unwrap starshipObject"); return}
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
