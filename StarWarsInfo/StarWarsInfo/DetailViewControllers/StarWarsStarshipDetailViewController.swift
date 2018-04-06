@@ -49,8 +49,9 @@ class StarWarsStarshipDetailViewController: UIViewController {
         if let cargo = starShipObj.cargo_capacity{
             self.cargoUpdateLabel.text = cargo
         }
-        
-        
+        if let starShip = starShipObj.starship_class{
+            self.starShipUpdateLabel.text = starShip
+        }
     }
 
     override func didReceiveMemoryWarning() {
