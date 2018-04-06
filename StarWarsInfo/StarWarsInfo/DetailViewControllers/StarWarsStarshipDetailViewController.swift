@@ -24,11 +24,30 @@ class StarWarsStarshipDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         guard let starShipObj = self.starShipObject else {print("did not unwrap starshipObject"); return}
-        
         if let name = starShipObj.name{
-            self.nameUpdateLabel.text = name 
+            self.nameUpdateLabel.text = name
+        }
+        if let model = starShipObj.model{
+            self.modelUpdateLabel.text = model
+        }
+        if let manufacturer = starShipObj.manufacturer{
+            self.manufacturerUpdateLabel.text = manufacturer
+        }
+        if let cost = starShipObj.cost_in_credits{
+            self.costUpdateLabel.text = cost
+        }
+        if let length = starShipObj.length{
+            self.lengthUpdateLabel.text = length
+        }
+        if let speed = starShipObj.max_atmosphering_speed{
+            self.speedUpdateLabel.text = speed
+        }
+        if let crew = starShipObj.crew{
+            self.crewUpdateLabel.text = crew
+        }
+        if let cargo = starShipObj.cargo_capacity{
+            self.cargoUpdateLabel.text = cargo
         }
         
         
