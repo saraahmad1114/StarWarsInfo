@@ -16,8 +16,8 @@ class MainStarWarsFilmsJson: Decodable {
 }
 
 struct StarWarsFilm: Decodable {
-    var title: String
-    var episode_id: Int
+    var title: String?
+    var episode_id: Int?
     var opening_crawl: String?
 }
 
