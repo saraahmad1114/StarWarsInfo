@@ -21,9 +21,18 @@ class StarWarsSpecieDetailViewController: UIViewController {
     @IBOutlet weak var lifespanUpdateLabel: UILabel!
     @IBOutlet weak var languageUpdateLabel: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        guard let specieObj = self.specieObject else{print("did not update species object"); return}
+        
+        if let name = specieObj.name{
+            self.nameUpdateLabel.text = name
+        }
+        if let classification = specieObj.classification{
+            self.classificationUpdateLabel.text = classification
+        }
+    
 
     }
 
