@@ -50,7 +50,6 @@ class StarWarsPersonDetailViewController: UIViewController {
         if let gender = starwarsObject.gender{
             self.genderUpdateLabel.text = gender
         }
-     
     }
 
     override func didReceiveMemoryWarning() {
