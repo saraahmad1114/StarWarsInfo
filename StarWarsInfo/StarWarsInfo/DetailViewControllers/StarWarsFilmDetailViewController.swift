@@ -12,8 +12,24 @@ class StarWarsFilmDetailViewController: UIViewController {
     
     var filmObj: StarWarsFilm?
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var episodeNumLabel: UILabel!
+    @IBOutlet weak var synopsisLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        guard let filmObject = self.filmObj else{print("did not unwrap filmObject"); return}
+        
+        if let title = filmObject.title{
+            self.titleLabel.text = title
+        }
+        if let episodeNum = filmObject.episode_id{
+            self.episodeNumLabel.text = String(episodeNum)
+        }
+        if let synopsis = filmObject.opening_crawl{
+            self.synopsisLabel.text = synopsis
+        }
     }
 
     override func didReceiveMemoryWarning() {

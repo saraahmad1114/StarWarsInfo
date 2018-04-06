@@ -683,7 +683,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Synopsis " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Z0-Cu-meR">
-                                <rect key="frame" x="28" y="142" width="331" height="21"/>
+                                <rect key="frame" x="28" y="142" width="331" height="216"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -699,6 +699,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zu4-ci-TSN"/>
                     </view>
+                    <connections>
+                        <outlet property="episodeNumLabel" destination="wM3-L4-o2G" id="eYH-lN-rjS"/>
+                        <outlet property="synopsisLabel" destination="2Z0-Cu-meR" id="kNZ-IT-egJ"/>
+                        <outlet property="titleLabel" destination="LhQ-l7-M6z" id="ffq-WE-fIk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yxb-aK-aoP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
