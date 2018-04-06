@@ -22,23 +22,33 @@ class StarWarsVehicleDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        guard let vehicleObject = self.vehicleObj else {print("did not unwrap vehicleObject"); return}
+        
+        if let name = vehicleObject.name {
+            self.nameUpdateLabel.text = name
+        }
+        if let model = vehicleObject.model{
+            self.modelUpdateLabel.text = model
+        }
+        if let manufacturer = vehicleObject.manufacturer{
+            self.manufacturerUpdateLabel.text = manufacturer
+        }
+        if let cost = vehicleObject.cost_in_credits{
+            self.costUpdateLabel.text = cost
+        }
+        if let speed = vehicleObject.max_atmosphering_speed{
+            self.maxSpeedUpdate.text = speed
+        }
+        if let crew = vehicleObject.crew{
+            self.crewUpdateLabel.text = crew
+        }
+        if let vehicleClass = vehicleObject.vehicle_class{
+            self.vehicleClassUpdateLabel.text = vehicleClass
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
