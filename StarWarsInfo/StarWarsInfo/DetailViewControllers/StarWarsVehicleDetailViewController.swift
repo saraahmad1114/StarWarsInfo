@@ -45,10 +45,12 @@ class StarWarsVehicleDetailViewController: UIViewController {
         }
         if let vehicleClass = vehicleObject.vehicle_class{
             self.vehicleClassUpdateLabel.text = vehicleClass
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
 }
