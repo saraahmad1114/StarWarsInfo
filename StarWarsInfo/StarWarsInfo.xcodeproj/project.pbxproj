@@ -222,8 +222,8 @@
 		5843EEE1205B42F4006B6595 /* DetailViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				5843EED5205B3774006B6595 /* StarWarsPlanetDetailViewController.swift */,
 				5843EED7205B3CA0006B6595 /* StarWarsPersonDetailViewController.swift */,
+				5843EED5205B3774006B6595 /* StarWarsPlanetDetailViewController.swift */,
 				5843EED9205B3E91006B6595 /* StarWarsStarshipDetailViewController.swift */,
 				5843EEDB205B3FCB006B6595 /* StarWarsSpecieDetailViewController.swift */,
 				5843EEDD205B4109006B6595 /* StarWarsVehicleDetailViewController.swift */,

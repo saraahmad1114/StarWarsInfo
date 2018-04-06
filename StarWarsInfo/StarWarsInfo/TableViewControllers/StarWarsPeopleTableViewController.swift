@@ -73,9 +73,13 @@ class StarWarsPeopleTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("1")
         if segue.identifier == "peopleDetailSegue"{
+            print("2")
             if let destinationVC = segue.destination as? StarWarsPersonDetailViewController {
+                print("3")
                 let neededIndexPath = self.tableView.indexPathForSelectedRow!
+                print("4")
                 destinationVC.starWarsPeopleObject = self.starWarsPeopleArray[neededIndexPath.row]
             }
         }
