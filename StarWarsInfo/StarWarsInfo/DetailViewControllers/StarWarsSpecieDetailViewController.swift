@@ -47,7 +47,12 @@ class StarWarsSpecieDetailViewController: UIViewController {
         if let eyeColor = specieObj.eye_colors{
             self.eyeColorUpdateLabel.text = eyeColor
         }
-        
+        if let lifespan = specieObj.average_lifespan{
+            self.lifespanUpdateLabel.text = lifespan
+        }
+        if let language = specieObj.language{
+            self.languageUpdateLabel.text = language
+        }
     
 
     }
