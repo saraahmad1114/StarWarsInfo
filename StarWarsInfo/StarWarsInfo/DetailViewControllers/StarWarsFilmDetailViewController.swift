@@ -10,6 +10,11 @@ import UIKit
 
 class StarWarsFilmDetailViewController: UIViewController {
     
+    //Create a scrollview for the film synopsis
+    //Constraint all the labels
+    //Fix the last of the images from the background
+    
+    
     var filmObj: StarWarsFilm?
 
     @IBOutlet weak var titleLabel: UILabel!
