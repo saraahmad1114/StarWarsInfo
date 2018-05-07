@@ -787,11 +787,28 @@
                                     <constraint firstAttribute="height" constant="201" id="8xG-4b-hDm"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5o-r7-La9">
+                                <rect key="frame" x="161" y="73" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameUpdate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxo-PZ-00E">
+                                <rect key="frame" x="31" y="102" width="328" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="naS-F3-Ipc" firstAttribute="leading" secondItem="dvU-Go-iLc" secondAttribute="leading" id="4G8-ar-R5b"/>
+                            <constraint firstItem="w5o-r7-La9" firstAttribute="top" secondItem="Bpq-80-aZY" secondAttribute="top" constant="9" id="87l-7P-plP"/>
+                            <constraint firstItem="w5o-r7-La9" firstAttribute="centerX" secondItem="Bpq-80-aZY" secondAttribute="centerX" constant="-4" id="AMq-7i-Isa"/>
+                            <constraint firstItem="bxo-PZ-00E" firstAttribute="top" secondItem="w5o-r7-La9" secondAttribute="bottom" constant="8" symbolic="YES" id="BQl-Af-uQa"/>
                             <constraint firstItem="naS-F3-Ipc" firstAttribute="bottom" secondItem="Bpq-80-aZY" secondAttribute="bottom" id="BuF-Lb-T1w"/>
+                            <constraint firstItem="bxo-PZ-00E" firstAttribute="centerX" secondItem="Bpq-80-aZY" secondAttribute="centerX" constant="7.5" id="Vg4-FL-Vsc"/>
+                            <constraint firstItem="bxo-PZ-00E" firstAttribute="trailing" secondItem="dvU-Go-iLc" secondAttribute="trailingMargin" id="cb1-f7-weT"/>
                             <constraint firstItem="naS-F3-Ipc" firstAttribute="top" secondItem="Bpq-80-aZY" secondAttribute="top" constant="402" id="gbv-3J-bXS"/>
                             <constraint firstItem="naS-F3-Ipc" firstAttribute="trailing" secondItem="Bpq-80-aZY" secondAttribute="trailing" id="h8p-9B-lfQ"/>
                             <constraint firstItem="naS-F3-Ipc" firstAttribute="leading" secondItem="Bpq-80-aZY" secondAttribute="leading" id="rkg-Ss-uvp"/>
