@@ -1000,12 +1000,20 @@
                                     <constraint firstAttribute="width" constant="375" id="wFZ-ct-i85"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUU-Ae-L4w">
+                                <rect key="frame" x="165" y="83" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="zUU-Ae-L4w" firstAttribute="centerX" secondItem="khQ-ga-gg0" secondAttribute="centerX" id="5HA-DD-Q2h"/>
                             <constraint firstItem="9uE-Qf-Cxd" firstAttribute="trailing" secondItem="khQ-ga-gg0" secondAttribute="trailing" id="IWR-WK-cR6"/>
                             <constraint firstItem="9uE-Qf-Cxd" firstAttribute="bottom" secondItem="khQ-ga-gg0" secondAttribute="bottom" id="MUu-QB-dhm"/>
                             <constraint firstItem="9uE-Qf-Cxd" firstAttribute="top" secondItem="khQ-ga-gg0" secondAttribute="top" constant="362" id="OXU-gB-tzq"/>
+                            <constraint firstItem="zUU-Ae-L4w" firstAttribute="top" secondItem="khQ-ga-gg0" secondAttribute="top" constant="19" id="heD-2r-0aG"/>
                             <constraint firstItem="9uE-Qf-Cxd" firstAttribute="leading" secondItem="khQ-ga-gg0" secondAttribute="leading" id="kg3-e4-nqw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="khQ-ga-gg0"/>
