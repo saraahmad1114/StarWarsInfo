@@ -12,12 +12,13 @@ class StarWarsPlanetDetailViewController: UIViewController {
     
     var starWarsPlanetObject: StarWarsPlanet?
     
-    @IBOutlet weak var upateNameLabel: UILabel!
-    @IBOutlet weak var updateRotationLabel: UILabel!
-    @IBOutlet weak var updateOrbital: UILabel!
-    @IBOutlet weak var updateDiameter: UILabel!
-    @IBOutlet weak var updateGravity: UILabel!
-    @IBOutlet weak var updatePopulation: UILabel!
+    @IBOutlet weak var nameUpdateLabel: UILabel!
+    @IBOutlet weak var rotationUpdateLabel: UILabel!
+    @IBOutlet weak var orbitalPeriodUpdateLabel: UILabel!
+    @IBOutlet weak var diameterUpdateLabel: UILabel!
+    @IBOutlet weak var gravityUpdateLabel: UILabel!
+    @IBOutlet weak var populationUpdatelabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
