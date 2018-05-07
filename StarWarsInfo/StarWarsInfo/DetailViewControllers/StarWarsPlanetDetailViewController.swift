@@ -23,7 +23,7 @@ class StarWarsPlanetDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //guard let starWarObject = self.starWarsPlanetObject else {print("did not unwrap the upper level objecct"); return}
+        guard let starWarObject = self.starWarsPlanetObject else {print("did not unwrap the upper level objecct"); return}
         
         //if let name = starWarObject.name {
             //self.upateNameLabel.text = name
