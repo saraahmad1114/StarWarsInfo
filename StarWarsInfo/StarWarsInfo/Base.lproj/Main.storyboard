@@ -996,6 +996,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bpq-80-aZY"/>
                     </view>
+                    <connections>
+                        <outlet property="birthYearUpdateLabel" destination="Npq-oU-4Bz" id="bdk-ll-bZK"/>
+                        <outlet property="eyeColorUpdateLabel" destination="mlp-LZ-snG" id="kMG-FC-10F"/>
+                        <outlet property="genderUpdateLabel" destination="grT-kp-imp" id="k7e-I8-LGs"/>
+                        <outlet property="hairColorUpdateLabel" destination="0Oc-80-mRM" id="h04-sT-L85"/>
+                        <outlet property="heightUpdateLabel" destination="MEt-cr-NDa" id="fct-Ub-Ysv"/>
+                        <outlet property="nameUpdateLabel" destination="bxo-PZ-00E" id="xtj-eB-sXH"/>
+                        <outlet property="skinColorUpdateLabel" destination="uIN-CX-AgQ" id="FCz-CQ-OyK"/>
+                        <outlet property="weightUpdateLabel" destination="qrq-Gd-Iu4" id="Pc2-by-84d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ujh-eY-P5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
