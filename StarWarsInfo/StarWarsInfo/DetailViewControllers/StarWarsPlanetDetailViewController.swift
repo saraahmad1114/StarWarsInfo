@@ -28,23 +28,18 @@ class StarWarsPlanetDetailViewController: UIViewController {
         if let name = starWarObject.name {
             self.nameUpdateLabel.text = name
         }
-        
         if let rotation = starWarObject.rotation_period{
             self.rotationUpdateLabel.text = rotation
         }
-        
         if let orbital = starWarObject.orbital_period{
             self.orbitalPeriodUpdateLabel.text = orbital
         }
-        
         if let diameter = starWarObject.diameter{
             self.diameterUpdateLabel.text = diameter
         }
-        
         if let gravity = starWarObject.gravity{
             self.gravityUpdateLabel.text = gravity
         }
-        
         if let population = starWarObject.population{
             self.populationUpdatelabel.text = population
         }
