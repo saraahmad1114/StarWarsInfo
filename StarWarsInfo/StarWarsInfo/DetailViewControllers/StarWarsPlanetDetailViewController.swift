@@ -37,15 +37,17 @@ class StarWarsPlanetDetailViewController: UIViewController {
             self.orbitalPeriodUpdateLabel.text = orbital
         }
         
-        //if let diameter = starWarObject.diameter{
-            //self.updateDiameter.text = diameter
-        //}
-        //if let gravity = starWarObject.gravity{
-            //self.updateGravity.text = gravity
-        //}
-        //if let population = starWarObject.population{
-            //self.updatePopulation.text = population
-        //}
+        if let diameter = starWarObject.diameter{
+            self.diameterUpdateLabel.text = diameter
+        }
+        
+        if let gravity = starWarObject.gravity{
+            self.gravityUpdateLabel.text = gravity
+        }
+        
+        if let population = starWarObject.population{
+            self.populationUpdatelabel.text = population
+        }
 
     }
 
