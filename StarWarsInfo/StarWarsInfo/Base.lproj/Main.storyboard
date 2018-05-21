@@ -665,6 +665,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XoM-Fa-Ji3"/>
                     </view>
+                    <connections>
+                        <outlet property="cargoUpdateLabel" destination="HKK-Ri-CxO" id="0lU-vi-xPi"/>
+                        <outlet property="costUpdateLabel" destination="k8F-iz-Hgo" id="nGe-Yv-TNu"/>
+                        <outlet property="crewUpdateLabel" destination="ib9-az-jHt" id="4eD-Sj-oxb"/>
+                        <outlet property="lengthUpdateLabel" destination="RoQ-KH-CdI" id="FFS-e2-CCp"/>
+                        <outlet property="manufacturerUpdateLabel" destination="86j-NO-o7j" id="4ll-oZ-8xI"/>
+                        <outlet property="modelUpdateLabel" destination="Z5W-dO-oTQ" id="Lh0-Ii-DX5"/>
+                        <outlet property="nameUpdateLabel" destination="uhf-qY-lPc" id="eAT-UD-yrp"/>
+                        <outlet property="speedUpdateLabel" destination="z94-9C-cRO" id="abP-06-qQw"/>
+                        <outlet property="starShipUpdateLabel" destination="aMl-wW-Hx7" id="Bgp-vb-hLP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMd-EV-A5h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
