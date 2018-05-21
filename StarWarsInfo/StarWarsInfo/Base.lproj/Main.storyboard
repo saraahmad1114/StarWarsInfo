@@ -582,8 +582,14 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cargo Capacity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYu-6C-qPA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cargo Capacity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYu-6C-qPA">
                                 <rect key="frame" x="131" y="369" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cargoUpdate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKK-Ri-CxO">
+                                <rect key="frame" x="16" y="387" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -608,9 +614,12 @@
                             <constraint firstItem="YBY-3c-4DS" firstAttribute="centerX" secondItem="uhf-qY-lPc" secondAttribute="centerX" constant="2.5" id="HwG-bk-2DM"/>
                             <constraint firstItem="86j-NO-o7j" firstAttribute="top" secondItem="Z5W-dO-oTQ" secondAttribute="bottom" constant="20" id="In2-Hg-1C2"/>
                             <constraint firstItem="Gt1-lE-cxf" firstAttribute="top" secondItem="XoM-Fa-Ji3" secondAttribute="top" constant="10" id="KJ6-rb-iSI"/>
+                            <constraint firstItem="XoM-Fa-Ji3" firstAttribute="trailing" secondItem="HKK-Ri-CxO" secondAttribute="trailing" constant="16" id="Kjm-lM-1uH"/>
                             <constraint firstItem="7cU-IL-YT8" firstAttribute="bottom" secondItem="XoM-Fa-Ji3" secondAttribute="bottom" id="Lsf-gt-4UK"/>
+                            <constraint firstItem="HKK-Ri-CxO" firstAttribute="top" secondItem="ib9-az-jHt" secondAttribute="bottom" constant="16" id="NAq-9L-Mfh"/>
                             <constraint firstItem="RoQ-KH-CdI" firstAttribute="leading" secondItem="uhf-qY-lPc" secondAttribute="leading" id="NFh-HB-cvw"/>
                             <constraint firstItem="Z5W-dO-oTQ" firstAttribute="leading" secondItem="XoM-Fa-Ji3" secondAttribute="leading" constant="35" id="OP7-lr-wBp"/>
+                            <constraint firstItem="HKK-Ri-CxO" firstAttribute="leading" secondItem="XoM-Fa-Ji3" secondAttribute="leading" constant="16" id="Oap-y2-w6C"/>
                             <constraint firstItem="k8F-iz-Hgo" firstAttribute="centerX" secondItem="XoM-Fa-Ji3" secondAttribute="centerX" constant="-4" id="RQe-m1-gjD"/>
                             <constraint firstItem="n0V-d9-Aip" firstAttribute="top" secondItem="Z5W-dO-oTQ" secondAttribute="bottom" id="RsM-L7-pCp"/>
                             <constraint firstItem="7cU-IL-YT8" firstAttribute="top" secondItem="XoM-Fa-Ji3" secondAttribute="top" constant="401" id="Sxc-jJ-4EG"/>
