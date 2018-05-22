@@ -396,12 +396,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hairUpdate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnt-kw-DUS">
-                                <rect key="frame" x="35" y="272" width="287" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -409,7 +403,6 @@
                             <constraint firstItem="aA9-Ld-HsL" firstAttribute="centerX" secondItem="bm2-C5-lNA" secondAttribute="centerX" constant="-3" id="15F-ah-fqj"/>
                             <constraint firstItem="VG7-y9-Aiq" firstAttribute="top" secondItem="7le-ga-QJo" secondAttribute="bottom" constant="-2" id="18y-c7-bZ8"/>
                             <constraint firstItem="xsW-Nx-PBQ" firstAttribute="top" secondItem="QU3-tA-Sjj" secondAttribute="top" constant="357" id="1Jp-w4-WtX"/>
-                            <constraint firstItem="qnt-kw-DUS" firstAttribute="leading" secondItem="QU3-tA-Sjj" secondAttribute="leading" constant="35" id="2K2-wf-8dS"/>
                             <constraint firstItem="7le-ga-QJo" firstAttribute="centerX" secondItem="X86-Re-h9Y" secondAttribute="centerX" constant="-2.5" id="3Ta-rL-aRV"/>
                             <constraint firstItem="zJE-cE-8Op" firstAttribute="centerX" secondItem="QU3-tA-Sjj" secondAttribute="centerX" id="3Xi-uK-9he"/>
                             <constraint firstItem="xsW-Nx-PBQ" firstAttribute="leading" secondItem="QU3-tA-Sjj" secondAttribute="leading" id="4Nx-LV-Gvv"/>
@@ -424,10 +417,8 @@
                             <constraint firstItem="X86-Re-h9Y" firstAttribute="centerX" secondItem="azp-fj-9BI" secondAttribute="centerX" constant="-0.5" id="TPX-18-OuR"/>
                             <constraint firstItem="azp-fj-9BI" firstAttribute="leading" secondItem="QU3-tA-Sjj" secondAttribute="leading" constant="19" id="TYw-kT-l7c"/>
                             <constraint firstItem="eDy-Qr-CrE" firstAttribute="centerX" secondItem="qDV-Oy-Auk" secondAttribute="centerX" constant="-0.5" id="WUN-LC-h4f"/>
-                            <constraint firstItem="qnt-kw-DUS" firstAttribute="top" secondItem="Zc7-Zy-BAW" secondAttribute="bottom" constant="16" id="Zwf-CG-PHQ"/>
                             <constraint firstItem="azp-fj-9BI" firstAttribute="top" secondItem="zJE-cE-8Op" secondAttribute="bottom" constant="-3" id="dJt-ey-IGh"/>
                             <constraint firstItem="qDV-Oy-Auk" firstAttribute="centerX" secondItem="VG7-y9-Aiq" secondAttribute="centerX" id="eER-3w-AzJ"/>
-                            <constraint firstItem="qnt-kw-DUS" firstAttribute="centerX" secondItem="eDy-Qr-CrE" secondAttribute="centerX" constant="-5.5" id="gOt-oS-MO1"/>
                             <constraint firstItem="Zc7-Zy-BAW" firstAttribute="top" secondItem="aA9-Ld-HsL" secondAttribute="bottom" constant="-3" id="gRh-i3-FP4"/>
                             <constraint firstItem="qDV-Oy-Auk" firstAttribute="top" secondItem="VG7-y9-Aiq" secondAttribute="bottom" constant="-2" id="hfo-is-CiF"/>
                             <constraint firstItem="7le-ga-QJo" firstAttribute="top" secondItem="X86-Re-h9Y" secondAttribute="bottom" constant="-1" id="mtf-1I-GfR"/>
